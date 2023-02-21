@@ -3,7 +3,7 @@
   padding-bottom: 64px;
 }
 
-.grayBar {
+.perspectiveBar {
   position: fixed;
   bottom: 0;
   height: 40%;
@@ -35,12 +35,11 @@
 
 .characterWrapper {
   min-height: 500px;
-  max-height: 80%;
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: 15%;
+  bottom: 5%;
   margin: auto;
-  right: 0;
+  left: 60%;
 }
 
 .controlColumn {
@@ -50,6 +49,10 @@
 @media (max-width: 768px) {
   .header {
     display: none;
+  }
+
+  .characterWrapper {
+    left: 0;
   }
 
   .maxWidthWrapper {
