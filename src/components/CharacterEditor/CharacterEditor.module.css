@@ -3,11 +3,21 @@
   padding-bottom: 64px;
 }
 
+.grayBar {
+  position: fixed;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background-color: hsl(195deg, 20%, 86%);
+}
+
 .maxWidthWrapper {
+  isolation: isolate;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +34,34 @@
 }
 
 .characterWrapper {
+  min-height: 500px;
+  max-height: 80%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .maxWidthWrapper {
+    overflow: auto;
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .controlColumn {
+    display: flex;
+    gap: 20px;
+  }
 }

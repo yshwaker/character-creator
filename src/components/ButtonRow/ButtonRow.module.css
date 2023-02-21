@@ -1,2 +1,10 @@
 .buttonRow {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .buttonRow {
+    width: 80vw;
+  }
 }
